@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "fca6dffee73d5852869ece9fb79b941e"
+name = "checkout-app"
+handle = "checkout-app-760"
+application_url = "https://caps-tiffany-measurements-parts.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "harshad-checkout-ui-extension.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://caps-tiffany-measurements-parts.trycloudflare.com/auth/callback",
+  "https://caps-tiffany-measurements-parts.trycloudflare.com/auth/shopify/callback",
+  "https://caps-tiffany-measurements-parts.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
