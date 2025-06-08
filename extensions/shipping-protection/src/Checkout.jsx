@@ -70,7 +70,7 @@ function Extension() {
             <Text size="small" appearance="subdued">Skip The Queue</Text>
           </InlineStack>
           <InlineStack >
-            <Text emphasis="bold">A$13.00</Text>
+            <Text emphasis="bold">$13.00</Text>
           </InlineStack>
         </View>
 
