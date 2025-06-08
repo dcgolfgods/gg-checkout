@@ -19,7 +19,7 @@ function Extension() {
   const cartLines = useCartLines();
 
   // Check if bump-up variant already exists in cart
-  const bumpUpVariantId = "gid://shopify/ProductVariant/45584036495578"; // Replace with your actual variant ID
+  const bumpUpVariantId = "gid://shopify/ProductVariant/39524281319510"; // Replace with your actual variant ID
   const bumpUpExists = cartLines.some(line => line.merchandise.id === bumpUpVariantId);
   console.log(cartLines);
   // Don't show if already in cart
