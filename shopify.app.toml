@@ -1,0 +1,31 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "aa8d5b9bb02b579f105feac91d1ca9e3"
+name = "GG Checkout"
+handle = "gg-checkout"
+application_url = "https://relying-bottom-rt-visited.trycloudflare.com"
+embedded = true
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://relying-bottom-rt-visited.trycloudflare.com/auth/callback",
+  "https://relying-bottom-rt-visited.trycloudflare.com/auth/shopify/callback",
+  "https://relying-bottom-rt-visited.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
